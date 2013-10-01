@@ -1,0 +1,7 @@
+import facebook
+
+oauth_access_token = "CAACEdEose0cBAFNaQO3AsWGSZCSGyH6WrChXgxsqeGLZBJtPbjOIkhhIlq9DsJfHuA391o6E2WQaiSp3jje2lnhcWgcZCCTGRcrReH431qf1jMLfe6o2XwdFY87GmDpOJAAlCZAZCK3IR2aauOZC8M1PDCPk3DJPbn8KMK2IgUGQdApOS1N0d0dSivOR1z6BzRZAO5GQXbyzwZDZD"
+graph = facebook.GraphAPI(oauth_access_token)
+profile = graph.get_object("me")
+
+print profile
